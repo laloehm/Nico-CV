@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    /* --skills: #004df9; */
+    --skills: #38b6ff;
+}
+
+body {
+    background: #000;
+}
+
+.row {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #38b6ff !important;
+}
+
+.container img.puesto {
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 120px;
+}
+
+.redes img {
+    width: 30px;
+}
+
+.redes a {
+    display: block;
+    color: #ffffff;
+    margin: 10px 0;
+    width: 60%;
+}
+
+.name {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 55px;
+    margin-bottom: 20px;
+    line-height: 80px;
+}
+
+.education,
+.experience,
+.habilidades .row,
+.idiomas-hobbies {
+    display: grid;
+    grid-template-columns: 43% 43% 14%;
+}
+
+.fechas {
+    color: #38b6ff;
+    font-weight: 700;
+}
+
+.puesto {
+    font-size: 20px;
+}
+
+.empresa {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.education .item,
+.experience .item {
+    border: 1px solid rgba(255, 255, 255, .3);
+    padding: 15px;
+    margin: 15px;
+    height: 180px;
+}
+
+.desarrollo h2,
+.experiencia h2,
+.idiomas h2,
+.habilidades_diseño h2,
+.habilidades_digitales h2 {
+    font-size: 26px;
+}
+
+/* Habilidades */
+.skills-container {
+    border: 1px solid rgba(255, 255, 255, .3);
+    padding: 2rem;
+    height: 390px;
+    margin: 0 15px;
+}
+
+.skills-container p {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.skills-container span {
+    width: 300px;
+    height: 5px;
+    display: inline-block;
+    background: #38b6ff;
+}
+
+.skills-container span.sesenta {
+    width: 60%;
+}
+
+.skills-container span.ochenta {
+    width: 80%;
+}
+
+.skills-container span.diez {
+    width: 10%;
+}
+
+.skills-container span.setentacinco {
+    width: 75%;
+}
+
+.skills-container span.veinticinco {
+    width: 25%;
+}
+
+.skills-container span.cien {
+    width: 100%;
+}
+
+.idiomas-hobbies img {
+    width: 100px;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #111;
+}
+
+h1 {
+    text-align: center;
+    color: #eee;
+}
+
+.skills-container {
+    margin-top: 2em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.circular-progress {
+    margin: 0 10px;
+    position: relative;
+}
+
+.circular-progress,
+.circular-progress:before,
+.circular-progress:after {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.circular-progress:before,
+.circular-progress:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.circular-progress:before {
+    padding: .5em;
+    line-height: 90px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.circular-progress:after {
+    font-size: .8rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 200px;
+}
+
+.html {
+    background: -webkit-linear-gradient(90deg, var(--skills) 50%, rgba(255, 26, 255, 0.3) 50%);
+    background: linear-gradient(0deg, var(--skills) 50%, rgba(255, 26, 255, 0.3) 50%);
+    -webkit-transform: rotate(72deg);
+    -ms-transform: rotate(72deg);
+    transform: rotate(72deg);
+}
+
+.html:before,
+.html:after {
+    color: var(--skills);
+}
+
+.html:before {
+    background: #111 content-box;
+    -webkit-transform: rotate(-72deg);
+    -ms-transform: rotate(-72deg);
+    transform: rotate(-72deg);
+    content: "100%";
+}
+
+.html:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "Español Nativo";
+    -webkit-transform: rotate(-72deg) scale(1.1);
+    -ms-transform: rotate(-72deg) scale(1.1);
+    transform: rotate(-72deg) scale(1.1);
+}
+
+.css {
+    background: -webkit-linear-gradient(90deg, var(--skills) 50%, rgba(255, 26, 255, 0.3) 50%);
+    background: linear-gradient(0deg, var(--skills) 50%, rgba(255, 26, 255, 0.3) 50%);
+    -webkit-transform: rotate(108deg);
+    -ms-transform: rotate(108deg);
+    transform: rotate(108deg);
+}
+
+.css:before,
+.css:after {
+    color: var(--skills);
+}
+
+.css:before {
+    background: #111 content-box;
+    -webkit-transform: rotate(-108deg);
+    -ms-transform: rotate(-108deg);
+    transform: rotate(-108deg);
+    content: "75%";
+}
+
+.css:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "Inglés Avanzado";
+    -webkit-transform: rotate(-108deg) scale(1.1);
+    -ms-transform: rotate(-108deg) scale(1.1);
+    transform: rotate(-108deg) scale(1.1);
+}
+
+.javascript {
+    background: -webkit-linear-gradient(90deg, var(--skills) 50%, rgba(255, 26, 255, 0.3) 50%);
+    background: linear-gradient(0deg, var(--skills) 50%, rgba(255, 26, 255, 0.3) 50%);
+    -webkit-transform: rotate(162deg);
+    -ms-transform: rotate(162deg);
+    transform: rotate(162deg);
+}
+
+.javascript:before,
+.javascript:after {
+    color: var(--skills);
+}
+
+.javascript:before {
+    background: #111 content-box;
+    -webkit-transform: rotate(-162deg);
+    -ms-transform: rotate(-162deg);
+    transform: rotate(-162deg);
+    content: "25%";
+}
+
+.javascript:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "French Básico";
+    -webkit-transform: rotate(-162deg) scale(1.1);
+    -ms-transform: rotate(-162deg) scale(1.1);
+    transform: rotate(-162deg) scale(1.1);
+}
+
+.analitycs {
+    background: -webkit-linear-gradient(90deg, var(--skills) 50%, rgba(255, 26, 255, 0.3) 50%);
+    background: linear-gradient(0deg, var(--skills) 50%, rgba(255, 26, 255, 0.3) 50%);
+    -webkit-transform: rotate(162deg);
+    -ms-transform: rotate(162deg);
+    transform: rotate(162deg);
+}
+
+.analitycs:before,
+.analitycs:after {
+    color: var(--skills);
+}
+
+.analitycs:before {
+    background: #111 content-box;
+    -webkit-transform: rotate(-162deg);
+    -ms-transform: rotate(-162deg);
+    transform: rotate(-162deg);
+    content: "80%";
+}
+
+.analitycs:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "Google Analytics";
+    -webkit-transform: rotate(-162deg) scale(1.1);
+    -ms-transform: rotate(-162deg) scale(1.1);
+    transform: rotate(-162deg) scale(1.1);
+}
+
+.console,
+.indesign,
+.illustrator {
+    background: -webkit-linear-gradient(90deg, var(--skills) 50%, rgba(255, 26, 255, 0.3) 50%);
+    background: linear-gradient(0deg, var(--skills) 50%, rgba(255, 26, 255, 0.3) 50%);
+    -webkit-transform: rotate(162deg);
+    -ms-transform: rotate(162deg);
+    transform: rotate(162deg);
+}
+
+.console::before,
+.indesign::before,
+.console:after,
+.indesign::after,
+.illustrator::before,
+.illustrator::after {
+    color: var(--skills);
+}
+
+.console:before {
+    background: #111 content-box;
+    -webkit-transform: rotate(-162deg);
+    -ms-transform: rotate(-162deg);
+    transform: rotate(-162deg);
+    content: "80%";
+}
+
+.console:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "Google Search Cons150";
+    -webkit-transform: rotate(-162deg) scale(1.1);
+    -ms-transform: rotate(-162deg) scale(1.1);
+    transform: rotate(-162deg) scale(1.1);
+}
+
+.indesign:before {
+    background: #111 content-box;
+    -webkit-transform: rotate(-162deg);
+    -ms-transform: rotate(-162deg);
+    transform: rotate(-162deg);
+    content: "60%";
+}
+
+.indesign:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "Adobe Indesign";
+    -webkit-transform: rotate(-162deg) scale(1.1);
+    -ms-transform: rotate(-162deg) scale(1.1);
+    transform: rotate(-162deg) scale(1.1);
+}
+
+.illustrator:before {
+    background: #111 content-box;
+    -webkit-transform: rotate(-162deg);
+    -ms-transform: rotate(-162deg);
+    transform: rotate(-162deg);
+    content: "60%";
+}
+
+.illustrator:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "Adobe Illustrator";
+    -webkit-transform: rotate(-162deg) scale(1.1);
+    -ms-transform: rotate(-162deg) scale(1.1);
+    transform: rotate(-162deg) scale(1.1);
+} */
+
+/*# sourceMappingURL=estilos.css.map */
