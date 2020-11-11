@@ -146,3 +146,172 @@ a:hover {
 .idiomas-hobbies .skills-container:nth-child(2) img {
     width: 100px;
 }
+
+/* Responsive */
+
+@media(max-width:1200px) {
+
+    .habilidades p,
+    .idiomas-hobbies p {
+        font-size: 15px;
+    }
+
+    .habilidades img,
+    .idiomas-hobbies img {
+        width: 125px;
+    }
+
+    .skills-container h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .skills-container {
+        height: 400px;
+    }
+}
+
+@media(max-width:991px) {
+    .container img.puesto {
+        width: 80px;
+        top: 15%;
+    }
+
+    .name {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .redes a {
+        width: 80%;
+    }
+
+    .desarrollo h2,
+    .experiencia h2,
+    .idiomas h2,
+    .habilidades h2,
+    .habilidades_diseño h2,
+    .habilidades_digitales h2 {
+        font-size: 20px;
+    }
+
+    .puesto {
+        font-size: 17px;
+    }
+
+    .habilidades .row,
+    .idiomas-hobbies {
+        grid-template-columns: 49% 49% 4%;
+    }
+
+    .habilidades img,
+    .idiomas-hobbies img {
+        width: 110px;
+    }
+
+    .habilidades p,
+    .idiomas-hobbies p {
+        font-size: 14px;
+    }
+
+    .skills-container h4 {
+        font-size: 17px;
+    }
+
+    .idiomas-hobbies .skills-container:nth-child(2) img {
+        width: 85px;
+    }
+}
+
+@media (max-width:767px) {
+    .name {
+        font-size: 24px;
+        line-height: 0px;
+    }
+
+    .redes a {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .redes img {
+        width: 24px;
+    }
+
+    .education .item,
+    .experience .item {
+        margin: 15px auto;
+        height: 140px;
+        width: 100%;
+    }
+
+    .container img.puesto {
+        display: none;
+    }
+
+    .desarrollo h2,
+    .experiencia h2,
+    .idiomas h2,
+    .habilidades h2,
+    .habilidades_diseño h2,
+    .habilidades_digitales h2 {
+        font-size: 18px;
+    }
+
+    .empresa {
+        font-size: 13px;
+    }
+
+    .education,
+    .experience,
+    .habilidades .row,
+    .idiomas-hobbies {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .habilidades img,
+    .idiomas-hobbies img {
+        width: 120px;
+        margin: 10px 0;
+    }
+
+    .experience .item,
+    .habilidades_digitales {
+        width: 100%;
+    }
+
+    .circular-progress {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .skills-container {
+        padding: 1.5rem 1rem;
+        margin: 0;
+    }
+
+    .skills-container h4 {
+        font-size: 15px;
+    }
+
+    .habilidades p,
+    .idiomas-hobbies p {
+        font-size: 13px;
+    }
+
+    .habilidades .skills-container,
+    .idiomas-hobbies .skills-container {
+        width: 100%;
+        height: 350px;
+    }
+
+    .habilidades_digitales .skills-container {
+        height: 500px;
+    }
+
+    .puesto {
+        font-size: 15px;
+    }
+}
